@@ -1,13 +1,40 @@
-# Insurance Project
-Java project to simulate the emission of insurance proposals for different asset types, such as residential properties, private cars, and trucks
+# insurance-company
 
+Small Java project created for study purposes.
 
-This project is based on a challenge from **@algaworks**.
+It models basic concepts related to insurance proposal emission, such as:
 
-## Future Ideas
-- Add ComercialProperty and Land
-- Discount rules based on asset value
-- Unit tests (JUnit)
+- A generic interface for insurable assets (`InsurableAsset`)
+- Asset-specific logic for calculating insurance premiums
+- Simple examples like ResidentialProperty, Truck, and InsuranceProposalService
 
-## Author
-Challenge made by Kai (@shturno), as part of my Java studies.
+---
+
+## 🧱 What’s implemented
+
+- Basic class structure in plain Java (no frameworks)
+- Interface with two required methods: calculatePremium() and describe()
+- Rules applied:
+  - ResidentialProperty → 10% of market value + R$0.30 per m²
+  - Truck → 2% of market value + R$50 per axle
+- A service that prints a proposal for any InsurableAsset
+
+---
+
+## ⚠️ Notes
+
+- This is not a complete system
+- There’s no persistence, user input, or tests
+- Just a study project made during my learning process
+
+---
+
+## 🛠️ Tech
+
+- Java 17+
+
+---
+
+## 📄 License
+
+Not licensed for real use. Educational only.
